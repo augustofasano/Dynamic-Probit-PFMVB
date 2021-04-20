@@ -1,6 +1,6 @@
 # Variational inference for the smoothing distribution in dynamic probit models
 
-This repository is associated with the article Fasano and Rebaudo (2021). Variational inference for the smoothing distribution in dynamic probit models. The key contribution of the paper is outlined below.
+This repository is associated with the article [Fasano and Rebaudo (2021)](https://arxiv.org/abs/2104.07537). Variational inference for the smoothing distribution in dynamic probit models. The key contribution of the paper is outlined below.
 
 > We develop a variational Bayes approach, extending the partially factorized mean-field variational approximation introduced by [Fasano, Durante and Zanella (2020)](https://arxiv.org/abs/1911.06743) for the static binary probit model to the dynamic setting exploting the theoretical results in [Fasano, Rebaudo, Durante and Petrone (2019)](https://arxiv.org/abs/1902.06994).
 
