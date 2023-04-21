@@ -1,12 +1,12 @@
 Introduction
 ============
 
-As described in the [`README.md`](https://github.com/GiovanniRebaudo/Dynamic-Probit-PFMVB/blob/main/README.md) file, this tutorial contains general guidelines and code to **perform the comparison for the financial applications** in the paper.
+As described in the [`README.md`](https://github.com/augustofasano/Dynamic-Probit-PFMVB/blob/main/README.md) file, this tutorial contains general guidelines and code to **perform the comparison for the financial applications** in the paper.
 
 Preliminary operations
 ======================
 
-Once the files [`Financial.RData`](https://github.com/GiovanniRebaudo/Dynamic-Probit-PFMVB/blob/main/Financial.RData) and [`Functions.R`](https://github.com/GiovanniRebaudo/Dynamic-Probit-PFMVB/blob/main/Functions.R) have been downloaded, set the working directory to the folder where they are located. Then, clean the workspace and load `Financial.RData` along with the source file `Functions.R` and other useful packages.
+Once the files [`Financial.RData`](https://github.com/augustofasano/Dynamic-Probit-PFMVB/blob/main/Financial.RData) and [`Functions.R`](https://github.com/augustofasano/Dynamic-Probit-PFMVB/blob/main/Functions.R) have been downloaded, set the working directory to the folder where they are located. Then, clean the workspace and load `Financial.RData` along with the source file `Functions.R` and other useful packages.
 
 ``` r
 source("Functions.R")
@@ -113,7 +113,7 @@ Plot_smooth = ggplot(Data_plot,aes(x=Time,col=Method))+
   theme(axis.title=element_blank(),legend.title = element_blank(),axis.text=element_text(size=20),strip.text = element_text(size=30),legend.text = element_text(size=30))+
   facet_wrap(~Par,nrow=2,scales = "free_y",labeller=label_parsed,strip.position = "right")
 ````
-![alt text](https://github.com/GiovanniRebaudo/Dynamic-Probit-PFMVB/blob/main/ComparisonTrajectories.png)
+![alt text](https://github.com/augustofasano/Dynamic-Probit-PFMVB/blob/main/ComparisonTrajectories.png)
 
 Finally, we show the boxplot of the differences of the mean and the log standard deviations of the smoothing parameters obtained with the **PFM-VB** solution and the **MF-VB** solution, using the inferences obtained via **i.i.d. sampling from the exact unified skew-normal posterior** as benchmark.
 
@@ -144,4 +144,4 @@ Plot_Diff = ggplot(Data_boxplot, aes(y=Diff, x=Method,col=Method)) +
   theme(axis.title=element_blank(),axis.text=element_text(size=20) , axis.text.x = element_text(colour = col_meth), strip.text = element_text(size=30),legend.position = "none")+
   facet_grid(Functional~Par,scales = "free", labeller=label_parsed)
 ````
-![alt text](https://github.com/GiovanniRebaudo/Dynamic-Probit-PFMVB/blob/main/ComparisonBoxplot.png)
+![alt text](https://github.com/augustofasano/Dynamic-Probit-PFMVB/blob/main/ComparisonBoxplot.png)
