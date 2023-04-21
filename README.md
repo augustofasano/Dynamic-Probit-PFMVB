@@ -10,6 +10,6 @@ This repository provides codes to implement the inference methods associated wit
 4. **mean-field variational Bayes (MF-VB) approximation**
 
 Structure of the repository:
-* the functions to implement the above methods can be found in the `R` source file [`Functions.R`](https://github.com/GiovanniRebaudo/Dynamic-Probit-PFMVB/blob/main/Functions.R)
-* the financial dataset analyzed in the illustration can be found in [`Financial.Rdata`](https://github.com/GiovanniRebaudo/Dynamic-Probit-PFMVB/blob/main/Financial.RData), while the original entire dataset is publicly available at [Yahoo Finance](https://finance.yahoo.com/)
-* the code and a tutorial to reproduce the results in the paper is available at [`Illustration.md`](https://github.com/GiovanniRebaudo/Dynamic-Probit-PFMVB/blob/main/Illustration.md)
+* the functions to implement the above methods can be found in the `R` source file [`Functions.R`](https://github.com/augustofasano/Dynamic-Probit-PFMVB/blob/main/Functions.R)
+* the financial dataset analyzed in the illustration can be found in [`Financial.Rdata`](https://github.com/augustofasano/Dynamic-Probit-PFMVB/blob/main/Financial.RData), while the original entire dataset is publicly available at [Yahoo Finance](https://finance.yahoo.com/)
+* the code and a tutorial to reproduce the results in the paper is available at [`Illustration.md`](https://github.com/augustofasano/Dynamic-Probit-PFMVB/blob/main/Illustration.md)
